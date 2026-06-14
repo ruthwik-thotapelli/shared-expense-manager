@@ -111,7 +111,7 @@ const DashboardLayout = ({ children }) => {
   };
 
   const navItems = [
-    { name: "Dashboard", path: "/", icon: FiHome },
+    { name: "Dashboard", path: "/dashboard", icon: FiHome },
     { name: "Groups", path: "/groups", icon: FiUsers },
     { name: "Expenses", path: "/expenses", icon: FiDollarSign },
     { name: "Balances", path: "/balances", icon: FiBarChart },
