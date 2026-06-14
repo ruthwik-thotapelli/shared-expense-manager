@@ -53,8 +53,26 @@ If you prefer CLI deployment and already have a Vercel token:
 npx vercel --prod
 ```
 
+## 🏗️ Backend API (optional)
+This repository now includes a simple Express backend scaffold in `backend/` with a SQLite initializer.
+
+To run the backend locally:
+```bash
+cd backend
+npm install
+npm start
+```
+
+Available example API endpoints:
+- `GET /api/status`
+- `GET /api/users`
+- `GET /api/groups`
+- `GET /api/expenses`
+- `GET /api/dashboard`
+
 ## 🛠️ Notes
-- The app is a frontend implementation and uses mock data in `src/data`.
+- The frontend is built with mock data in `src/data`.
+- The backend scaffold uses SQLite and seeds sample data from `backend/init.sql`.
 - `vercel.json` is included to support SPA routing and static build output.
 
 ## 📄 License
