@@ -190,11 +190,12 @@ const DashboardLayout = ({ children }) => {
       <div className="flex-1 flex flex-col min-w-0">
         {/* Navbar */}
         <header className="h-16 px-4 sm:px-6 flex items-center justify-between border-b border-slate-100 bg-white/80 dark:border-slate-800/80 dark:bg-slate-900/80 backdrop-blur-md sticky top-0 z-40">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3" role="navigation" aria-label="Main menu">
             {/* Burger Button */}
             <button
               onClick={() => setMobileMenuOpen(true)}
               className="lg:hidden p-2 rounded-xl border border-slate-100 hover:bg-slate-50 text-slate-600 dark:border-slate-800 dark:hover:bg-slate-800 dark:text-slate-300 cursor-pointer"
+              aria-label="Open menu"
             >
               <FiMenu className="w-5 h-5" />
             </button>

@@ -78,8 +78,8 @@ const Dashboard = () => {
                   Updated today
                 </span>
               </div>
-              <div className="mt-6 h-72">
-                <ResponsiveContainer width="100%" height="100%">
+              <div className="mt-6 h-72 min-h-[280px]">
+                <ResponsiveContainer width="100%" height={300}>
                   <AreaChart data={expensesByMonth} margin={{ top: 10, right: 0, left: -20, bottom: 0 }}>
                     <defs>
                       <linearGradient id="expenseGradient" x1="0" y1="0" x2="0" y2="1">

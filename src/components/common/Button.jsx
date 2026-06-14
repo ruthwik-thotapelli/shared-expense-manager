@@ -12,7 +12,7 @@ const Button = ({
   className = "",
   ...props
 }) => {
-  const baseStyles = "inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer";
+  const baseStyles = "inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 focus-visible:ring-4 focus-visible:ring-violet-200 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer";
   
   const variants = {
     primary: "bg-violet-600 hover:bg-violet-700 text-white shadow-sm border border-transparent dark:bg-violet-500 dark:hover:bg-violet-600 focus:ring-violet-500",
