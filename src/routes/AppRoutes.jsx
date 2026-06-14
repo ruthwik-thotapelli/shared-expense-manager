@@ -4,6 +4,7 @@ import DashboardLayout from "../layouts/DashboardLayout";
 import AuthLayout from "../layouts/AuthLayout";
 
 // Import pages
+import Welcome from "../pages/Welcome";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Dashboard from "../pages/Dashboard";
@@ -32,7 +33,7 @@ const ProtectedRoute = ({ children }) => {
 const PublicRoute = ({ children }) => {
   const { currentUser } = useAuth();
   if (currentUser) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/dashboard" replace />;
   }
   return <AuthLayout>{children}</AuthLayout>;
 };
@@ -59,8 +60,9 @@ const AppRoutes = () => {
       />
 
       {/* Protected App Routes */}
+      <Route path="/" element={<Welcome />} />
       <Route
-        path="/"
+        path="/dashboard"
         element={
           <ProtectedRoute>
             <Dashboard />
