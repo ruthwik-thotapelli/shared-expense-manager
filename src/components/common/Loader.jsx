@@ -1,4 +1,3 @@
-import React from "react";
 
 const Loader = ({
   size = "md", // sm, md, lg

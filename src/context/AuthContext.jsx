@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState } from "react";
 import { mockUsers } from "../data/mockUsers";
 
 const AuthContext = createContext();
@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
     return mockUsers;
   });
 
-  const login = (email, password) => {
+  const login = (email) => {
     // Simulating login - find user by email
     const user = users.find((u) => u.email.toLowerCase() === email.toLowerCase());
     if (user) {

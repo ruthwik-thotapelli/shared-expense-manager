@@ -1,8 +1,8 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+/* eslint-disable react-refresh/only-export-components */
+import { createContext, useContext, useState, useEffect } from "react";
 import { mockGroups } from "../data/mockGroups";
 import { mockExpenses } from "../data/mockExpenses";
 import { mockSettlements } from "../data/mockSettlements";
-import { mockUsers } from "../data/mockUsers";
 import { calculateNetBalances, getSimplifiedDebts } from "../utils/debtSimplification";
 
 const AppContext = createContext();

@@ -1,4 +1,5 @@
-import React from "react";
+
+import { Fragment } from "react";
 
 const Skeleton = ({
   variant = "line", // line, circle, card, table
@@ -46,9 +47,9 @@ const Skeleton = ({
   return (
     <>
       {items.map((_, index) => (
-        <React.Fragment key={index}>
+        <Fragment key={index}>
           {renderSkeleton()}
-        </React.Fragment>
+        </Fragment>
       ))}
     </>
   );

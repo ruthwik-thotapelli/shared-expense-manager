@@ -1,4 +1,3 @@
-import React from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { motion } from "framer-motion";
