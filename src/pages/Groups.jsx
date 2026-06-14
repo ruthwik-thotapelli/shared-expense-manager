@@ -60,9 +60,9 @@ const Groups = () => {
         onAction={() => setShowModal(true)}
       />
 
-      <div className="grid gap-4 xl:grid-cols-2">
+         <div role="list" className="grid gap-4 xl:grid-cols-2">
         {groups.map((group) => (
-          <GroupCard key={group.id} group={group} memberCount={group.members.length} />
+             <div role="listitem" key={group.id}><GroupCard group={group} memberCount={group.members.length} /></div>
         ))}
       </div>
 
