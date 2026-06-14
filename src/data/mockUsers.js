@@ -1,0 +1,42 @@
+export const mockUsers = [
+  {
+    id: "u1",
+    name: "Alice Smith",
+    email: "alice@example.com",
+    avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=Alice",
+    currency: "USD",
+    phone: "+1 (555) 234-5678",
+  },
+  {
+    id: "u2",
+    name: "Bob Jones",
+    email: "bob@example.com",
+    avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=Bob",
+    currency: "USD",
+    phone: "+1 (555) 876-5432",
+  },
+  {
+    id: "u3",
+    name: "Charlie Brown",
+    email: "charlie@example.com",
+    avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=Charlie",
+    currency: "USD",
+    phone: "+1 (555) 345-6789",
+  },
+  {
+    id: "u4",
+    name: "Diana Prince",
+    email: "diana@example.com",
+    avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=Diana",
+    currency: "EUR",
+    phone: "+1 (555) 456-7890",
+  },
+  {
+    id: "u5",
+    name: "Evan Wright",
+    email: "evan@example.com",
+    avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=Evan",
+    currency: "USD",
+    phone: "+1 (555) 567-8901",
+  },
+];
