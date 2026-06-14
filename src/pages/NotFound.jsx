@@ -10,7 +10,7 @@ const NotFound = () => (
       </div>
       <h1 className="text-4xl font-semibold text-slate-900 dark:text-white">404</h1>
       <p className="mt-4 text-sm text-slate-500 dark:text-slate-400">The page you are looking for cannot be found. It may have been moved or removed.</p>
-      <Link to="/" className="inline-flex mt-8 items-center justify-center rounded-full bg-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-violet-700 transition">
+      <Link to="/" aria-label="Return to dashboard" className="inline-flex mt-8 items-center justify-center rounded-full bg-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-violet-700 transition">
         Return to dashboard
       </Link>
     </Card>
