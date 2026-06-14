@@ -12,7 +12,7 @@ const ImportDropzone = ({ isDragging, onSelectFile, fileName, onClear }) => (
       <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
         <label className="cursor-pointer rounded-full bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700 transition-colors">
           Select CSV
-          <input type="file" accept=".csv" className="hidden" onChange={onSelectFile} />
+          <input aria-label="Select CSV file" type="file" accept=".csv" className="hidden" onChange={onSelectFile} />
         </label>
         {fileName && (
           <Button variant="secondary" size="sm" onClick={onClear}>
