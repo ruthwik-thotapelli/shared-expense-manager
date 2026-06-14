@@ -25,7 +25,7 @@ const AuthLayout = ({ children }) => {
         </div>
 
         {/* Hero Message */}
-        <div className="my-auto z-10 max-w-md text-left">
+        <div className="my-auto z-10 max-w-md text-left" role="region" aria-label="Auth hero">
           <h1 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
             Share expenses, <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-200 to-indigo-100">
