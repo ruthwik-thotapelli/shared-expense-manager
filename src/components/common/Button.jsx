@@ -35,7 +35,7 @@ const Button = ({
       type={type}
       onClick={onClick}
       disabled={disabled || loading}
-      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${widthStyle} ${className}`}
+      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${widthStyle} ${className} focus-visible:outline-none focus-visible:ring-4`}
       {...props}
     >
       {loading ? (
