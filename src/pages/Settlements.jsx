@@ -25,7 +25,7 @@ const Settlements = () => {
         </div>
 
         <div className="mt-6 overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-800">
-          <table className="min-w-full divide-y divide-slate-200 bg-white text-left dark:bg-slate-950 dark:divide-slate-800">
+          <table role="table" aria-label="Settlements" className="min-w-full divide-y divide-slate-200 bg-white text-left dark:bg-slate-950 dark:divide-slate-800">
             <thead className="bg-slate-50 dark:bg-slate-900">
               <tr>
                 <th className="px-4 py-4 text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Payer</th>
