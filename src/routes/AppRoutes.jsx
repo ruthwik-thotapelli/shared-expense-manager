@@ -61,6 +61,8 @@ const AppRoutes = () => {
 
       {/* Protected App Routes */}
       <Route path="/" element={<Welcome />} />
+      <Route path="/welcome" element={<Welcome />} />
+      <Route path="/welcome.jsx" element={<Navigate to="/" replace />} />
       <Route
         path="/dashboard"
         element={
