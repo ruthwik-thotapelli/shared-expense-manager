@@ -21,7 +21,7 @@ const Register = () => {
     setError("");
     setLoading(true);
 
-    const result = register({ name, email, currency, phone: "" });
+    const result = register({ name, email, password, currency, phone: "" });
     setLoading(false);
 
     if (result.success) {

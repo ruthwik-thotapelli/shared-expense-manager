@@ -33,9 +33,9 @@ export const AuthProvider = ({ children }) => {
     return mockUsers;
   });
 
-  const login = (email) => {
-    // Simulating login - find user by email
-    const user = users.find((u) => u.email.toLowerCase() === email.toLowerCase());
+  const login = (email, password) => {
+    // Simulating login - find user by email and password
+    const user = users.find((u) => u.email.toLowerCase() === email.toLowerCase() && u.password === password);
     if (user) {
       setCurrentUser(user);
       localStorage.setItem("currentUser", JSON.stringify(user));
@@ -59,6 +59,7 @@ export const AuthProvider = ({ children }) => {
       id: `u${Date.now()}`,
       name: userData.name,
       email: userData.email,
+      password: userData.password || "",
       avatar: `https://api.dicebear.com/7.x/adventurer/svg?seed=${encodeURIComponent(userData.name)}`,
       currency: userData.currency || "USD",
       phone: userData.phone || "",
